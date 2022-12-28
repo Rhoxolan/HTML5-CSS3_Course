@@ -8,7 +8,6 @@
     <title>Cats Gallery</title>
 
     <style>
-
         .galleryClass {
             margin: auto;
             max-width: 410px;
@@ -16,15 +15,11 @@
         }
 
         .frameDiv {
-            display: block;
-  margin: auto;
-  width: 100%;
-  text-align: center;
+            margin: auto;
+            max-width: 410px;
+            text-align: center;
+            border: 1px solid salmon;
         }
-
-        iframe {
-  width: 300px;
-  }
 
     </style>
 
@@ -33,17 +28,21 @@
 <body>
 
 
-    <div class="frameDiv">
-        <iframe frameborder="0" height="410" src="Cats/cat_box_256.png" name="catFrame"></iframe>
+    <div class="galleryClass" style="text-align: center;">
+        <h3>CAT'S GALLERY</h3>
     </div>
-        <div class="galleryClass">
-            <a href="Cats/cat_box_256.png" target="catFrame"> <img src="Cats/cat_box_64.png " alt="cat"> </a>
-            <a href="Cats/cat_cage_256.png" target="catFrame"> <img src="Cats/cat_cage_64.png" alt="cat"> </a>
-            <a href="Cats/cat_clean_256.png" target="catFrame"> <img src="Cats/cat_clean_64.png" alt="cat"> </a>      
-            <a href="Cats/cat_eyes_256.png" target="catFrame"> <img src="Cats/cat_eyes_64.png" alt="cat"> </a>
-            <a href="Cats/cat_tied_256.png" target="catFrame"> <img src="Cats/cat_tied_64.png" alt="cat"> </a>
-            <a href="Cats/cat_purr_256.png" target="catFrame"> <img src="Cats/cat_purr_64.png" alt="cat"> </a>
-        </div>
+
+    <div class="frameDiv">
+        <iframe frameborder="0" height="300" style="margin: 3% 0% 0% 10%" src="Cats/cat_box_256.png" name="catFrame"></iframe>
+    </div>
+    <div class="galleryClass">
+        <a href="Cats/cat_box_256.png" target="catFrame"> <img src="Cats/cat_box_64.png " alt="cat"> </a>
+        <a href="Cats/cat_cage_256.png" target="catFrame"> <img src="Cats/cat_cage_64.png" alt="cat"> </a>
+        <a href="Cats/cat_clean_256.png" target="catFrame"> <img src="Cats/cat_clean_64.png" alt="cat"> </a>
+        <a href="Cats/cat_eyes_256.png" target="catFrame"> <img src="Cats/cat_eyes_64.png" alt="cat"> </a>
+        <a href="Cats/cat_tied_256.png" target="catFrame"> <img src="Cats/cat_tied_64.png" alt="cat"> </a>
+        <a href="Cats/cat_purr_256.png" target="catFrame"> <img src="Cats/cat_purr_64.png" alt="cat"> </a>
+    </div>
 
 
 
