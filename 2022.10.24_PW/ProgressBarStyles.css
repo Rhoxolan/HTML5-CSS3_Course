@@ -1,0 +1,19 @@
+@keyframes slider {
+    from{
+        margin-left: 0px;
+    }
+}
+
+.sliderDiv{
+    background-color: orangered;
+    animation: slider 5s linear infinite;
+    height: 100%;
+    width: 25%;
+    margin-left: 75%;
+}
+
+.progressBarDiv {
+    margin: 4% 5% Auto 5%;
+    border: 3px solid orangered;
+    height: 115px;
+}
