@@ -11,9 +11,12 @@
     width: 550px;
     margin: auto;
     transition-duration: 5s;
+    background-image: url(/favorites.png);
 }
 
 .divClass:hover{
     height: 175px;
     width: 175px;
+    opacity: 0.7;
+    background-image: url(/favorites2.png);
 }
