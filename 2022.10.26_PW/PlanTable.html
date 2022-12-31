@@ -6,64 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plan Table</title>
-
-    <style>
-
-        table{
-            border-collapse: collapse;
-        }
-
-        th{
-            color: white;
-        }
-        
-        th:nth-child(1){
-            background-color: rgb(97, 97, 255);
-        }
-
-        th:nth-child(2){
-            background-color: rgb(60, 60, 228);
-        }
-
-        th:nth-child(3){
-            background-color: rgb(39, 39, 189);
-        }
-
-        th:nth-child(4){
-            background-color: rgb(27, 27, 128);
-        }
-
-        th:nth-child(5){
-            background-color: rgb(9, 9, 59);
-        }
-
-        th:first-child {
-            border-top-left-radius: 5px;
-        }
-
-        th:last-child {
-            border-top-right-radius: 5px;
-        }
-
-
-        td:nth-child(odd) {
-            background: rgb(187, 186, 186);
-        }
-
-        td:nth-child(even) {
-            background: rgb(228, 225, 225);
-        }
-
-        tr:nth-child(odd){
-            background-color: aqua;
-        }
-
-        tr:nth-child(even){
-            background-color: aquamarine;
-        } */
-
-    </style>
-
+    <link rel="stylesheet" href="/PlanTable_style.css">
 </head>
 
 <body>
@@ -71,10 +14,18 @@
     <table style="margin: 3% auto;">
         <tr>
             <th>Choose your plan</th>
-            <th>starter</th>
-            <th>econom</th>
-            <th>standart</th>
-            <th>proffessional</th>
+            <th>
+                <p>starter<br><br><span class="heavySpan">$10</span><br>per month</p>
+            </th>
+            <th>
+                <p>econom<br><br><span class="heavySpan">310</span><br>per month</p>
+            </th>
+            <th>
+                <p>standart<br><br><span class="heavySpan">$59</span><br>per month</p>
+            </th>
+            <th>
+                <p>professional<br><br><span class="heavySpan">$99</span><br>per month</p>
+            </th>
         </tr>
         <tr>
             <td>Amount of space</td>
