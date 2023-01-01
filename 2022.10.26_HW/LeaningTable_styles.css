@@ -1,0 +1,33 @@
+table {
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.headerClass {
+    position: sticky;
+    left: 0;
+    top: 0;
+}
+
+th {
+    background-color: #ADD9E6;
+    min-width: 115px;
+    min-height: 35px;
+    height: 35px;
+    width: 115px;
+}
+
+td {
+    min-width: 115px;
+    min-height: 35px;
+    height: 35px;
+    width: 115px;
+}
+
+tr:nth-child(even) {
+    background-color: #F5F5F5;
+}
+
+tr:nth-child(odd) {
+    background-color: #E9E9E9;
+}
