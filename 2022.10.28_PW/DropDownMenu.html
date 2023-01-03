@@ -8,11 +8,10 @@
     <title>Document</title>
 
     <style>
-        .textDiv{
+        .textDiv {
             margin: 10px 25px 25px 75px;
             position: static;
         }
-
 
         .menuDiv {
             background-color: rgb(161, 161, 161);
@@ -29,12 +28,18 @@
             text-align: center;
         }
 
-        .menuDiv ul>li{
-            margin-bottom: 15px;
+        .itemDiv {
+            padding: 5px;
+            display: flex;
         }
 
-        .menuDiv ul>li:hover{
-            background-color: dimgray;
+        .itemDiv:hover {
+            background-color: dimgrey;
+        }
+
+        .itemTextDiv {
+            margin-left: 10px;
+            margin-top: 5px;
         }
     </style>
 
@@ -43,16 +48,34 @@
 
 <body>
 
-
     <div class="menuDiv">
+
         <h4>MENU</h4>
-        <ul>
-            <li style="list-style-image: url(/Icons/pencil.png);">EDIT</li>
-            <li style="list-style-image: url(/Icons/favorites.png);">FAVORITES</li>
-            <li style="list-style-image: url(/Icons/paper.png);">HISTORY</li>
-            <li style="list-style-image: url(/Icons/book.png);">SECURITY</li>
-            <li style="list-style-image: url(/Icons/calc.png);">SETTINGS</li>
-        </ul>
+
+        <div class="itemDiv">
+            <img src="/Icons/pencil.png" alt="pencil">
+            <div class="itemTextDiv">EDIT</div>
+        </div>
+
+        <div class="itemDiv">
+            <img src="/Icons/favorites.png" alt="favorites">
+            <div class="itemTextDiv">FAVORITES</div>
+        </div>
+
+        <div class="itemDiv">
+            <img src="/Icons/paper.png" alt="paper">
+            <div class="itemTextDiv">HISTORY</div>
+        </div>
+
+        <div class="itemDiv">
+            <img src="/Icons/book.png" alt="book">
+            <div class="itemTextDiv">SECURITY</div>
+        </div>
+
+        <div class="itemDiv">
+            <img src="/Icons/calc.png" alt="calc">
+            <div class="itemTextDiv">SETTINGS</div>
+        </div>
 
     </div>
 
