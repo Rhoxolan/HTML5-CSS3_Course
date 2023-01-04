@@ -8,83 +8,106 @@
     <title>Choose Your Plan</title>
 
     <style>
+
+        body {
+            margin: 0;
+            padding: 10px;
+        }
+
         #centralBlock {
-            border: 1px solid red;
+            /* border: 1px solid red; */
+            display: flex;
+            flex-flow: row;
             margin: 25px auto;
             max-width: 1150px;
             min-width: 1050px;
         }
 
-        .planBlock {
-            border: 1px solid yellow;
-            height: 325px;
-            min-width: 200px;
-            max-width: 210px;
+        .col {
+            margin: auto;
+            /* border: 1px solid green; */
+        }
+
+        .card {
+            position: relative;
             margin: auto;
             margin-top: 5px;
             margin-bottom: 5px;
-            text-align: center;
+
+            height: 325px;
+            min-width: 200px;
+            max-width: 210px;
         }
 
-        .planBlock>hr {
+        .card__inner {
+            position: absolute;
+            text-align: center;
+            top: 5%;
+            left: 5%;
+            height: 90%;
+            width: 90%;
+            border: 1px solid yellow;
+        }
+
+        .card:hover .card__inner {
+            top: 0%;
+            left: 0%;
+            height: 100%;
+            width: 100%;
+            background: goldenrod;
+        }
+
+        .card__inner>hr {
             border: none;
             height: 2px;
         }
 
-        .planBlock .heavySpan {
+        .card__inner .heavySpan {
             font-size: x-large;
             font-weight: bolder;
         }
-
-
     </style>
 
 </head>
 
 <body>
-
     <div id="centralBlock">
 
-
-        <div class="blockClass">
-            <div class="planBlock">
-                <h5>ENTERPRICE</h5>
-                <hr style="background-color: rgb(109, 42, 42);">
-                <p><span class="heavySpan">$69</span><br><span class="lightSpan">per month</span></p>
+        <div class="col">
+            <div class="card">
+                <div class="card__inner">
+                    <h5>ENTERPRICE</h5>
+                    <hr style="background-color: rgb(109, 42, 42);">
+                    <p><span class="heavySpan">$69</span><br><span class="lightSpan">per month</span></p>
+                </div>
             </div>
         </div>
 
-        <div class="blockClass">
-            <div class="planBlock">
-
+        <div class="col">
+            <div class="card">
+                <div class="card__inner"></div>
             </div>
         </div>
 
-        <div class="blockClass">
-
-            <div class="planBlock">
-
+        <div class="col">
+            <div class="card">
+                <div class="card__inner"></div>
             </div>
         </div>
 
-        <div class="blockClass">
-
-            <div class="planBlock">
-
+        <div class="col">
+            <div class="card">
+                <div class="card__inner"></div>
             </div>
         </div>
 
-        <div class="blockClass">
-
-            <div class="planBlock">
-
+        <div class="col">
+            <div class="card">
+                <div class="card__inner"></div>
             </div>
         </div>
-
 
     </div>
-
-
 </body>
 
 </html>
