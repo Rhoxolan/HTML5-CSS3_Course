@@ -1,0 +1,27 @@
+body {
+    background-color: rgb(55, 170, 170);
+}
+
+#centralDiv {
+    /* border: 1px solid red; */
+    min-width: 1125px;
+    max-width: 1155px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.newsColumnDiv {
+    /* border: 1px solid yellow; */
+    width: 350px;
+}
+
+.newsDiv {
+    /* border: 1px solid green; */
+    margin-bottom: 15px;
+    background-color: whitesmoke;
+}
+
+.newsDiv>p {
+    margin: 5px;
+}
