@@ -1,0 +1,68 @@
+#headerDiv {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background-color: rgb(31, 116, 116);
+    height: 50px;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    font-weight: bolder;
+}
+
+body {
+    background-color: rgb(37, 185, 178);
+}
+
+#containerDiv {
+    /* border: 1px solid red; */
+    margin: 75px 10px;
+    display: inline-flex;
+}
+
+.cardDiv {
+    /* border: 1px solid yellow; */
+    min-height: 400px;
+    max-height: 400px;
+    min-width: 290px;
+    max-width: 290px;
+    overflow: auto;
+    margin-right: 50px;
+    border-radius: 3px;
+    background-color: rgb(209, 214, 214);
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.taskDiv {
+    background-color: rgb(237, 240, 240);
+    border-radius: 1px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.buttonPanelDivOuter {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttonPanelDiv {
+    margin-top: 15px;
+    display: inline-flex;
+    align-items: flex-end;
+    gap: 7px;
+}
+
+.buttonPanelDiv>img {
+    width: 16px;
+    height: 16px;
+}
+
+.faceImg {
+    width: 48px;
+    height: 48px;
+}

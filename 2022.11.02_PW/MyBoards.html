@@ -6,77 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Boards</title>
-
-    <style>
-        #headerDiv {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            background-color: rgb(31, 116, 116);
-            height: 50px;
-            color: white;
-            display: flex;
-            align-items: center;
-            padding-left: 15px;
-            font-weight: bolder;
-        }
-
-        body {
-            background-color: rgb(37, 185, 178);
-        }
-
-        #containerDiv {
-            border: 1px solid red;
-            margin: 75px 10px;
-            display: inline-flex;
-        }
-
-        .cardDiv {
-            /* border: 1px solid yellow; */
-            min-height: 400px;
-            max-height: 400px;
-            min-width: 290px;
-            max-width: 290px;
-            overflow: auto;
-            margin-right: 50px;
-            border-radius: 3px;
-            background-color: rgb(209, 214, 214);
-            padding: 5px;
-            padding-left: 15px;
-            padding-right: 15px;
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-        }
-
-        .taskDiv {
-            background-color: rgb(237, 240, 240);
-            border-radius: 1px;
-            padding: 5px;
-            margin-bottom: 10px;
-        }
-
-        .buttonPanelDivOuter{
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .buttonPanelDiv {
-            margin-top: 15px;
-            display: inline-flex;
-            align-items: flex-end;
-            gap: 7px;
-        }
-
-        .buttonPanelDiv>img {
-            width: 16px;
-            height: 16px;
-        }
-
-        .faceImg{
-            width: 48px;
-            height: 48px;
-        }
-    </style>
+    <link rel="stylesheet" href="/MyBoards_styles.css">
 
 </head>
 
@@ -89,7 +19,7 @@
     <div id="containerDiv">
 
         <div class="cardDiv">
-            <h4>To Dd</h4>
+            <h4>To Do</h4>
             <div class="taskDiv">
                 <div>
                     Lorem ipsum dolor sit amet.
@@ -108,28 +38,292 @@
                 </div>
             </div>
             <div class="taskDiv">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel consequuntur inventore minima magni nulla
-                eligendi.
+                <div>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi quibusdam eius quaerat
+                    reprehenderit, provident impedit.
+                </div>
+                <div class="buttonPanelDivOuter">
+                    <div class="buttonPanelDiv">
+                        <img src="/Icons_And_Avatars/justify_26.png" alt="img">
+                        <img src="/Icons_And_Avatars/checkbox_26.png" alt="img">
+                        <div>4/8</div>
+                        <img src="/Icons_And_Avatars/attach_26.png" alt="img">
+                        <div>2</div>
+                    </div>
+                    <img class="faceImg" src="/Icons_And_Avatars/avatar_4.png" alt="img">
+                </div>
             </div>
             <div class="taskDiv">
-                Lorem, ipsum dolor.
+                <div>
+                    Lorem, ipsum dolor.
+                </div>
+                <div class="buttonPanelDivOuter">
+                    <div class="buttonPanelDiv">
+                        <img src="/Icons_And_Avatars/justify_26.png" alt="img">
+                        <img src="/Icons_And_Avatars/attach_26.png" alt="img">
+                        <div>2</div>
+                        <img src="/Icons_And_Avatars/comments_26.png" alt="img">
+                        <div>4</div>
+                    </div>
+                    <img class="faceImg" src="/Icons_And_Avatars/avatar_3.png" alt="img">
+                </div>
             </div>
         </div>
 
         <div class="cardDiv">
             <h4>In Process</h4>
+            <div class="taskDiv">
+                <div>
+                    Lorem ipsum dolor sit amet.
+                </div>
+                <div class="buttonPanelDivOuter">
+                    <div class="buttonPanelDiv">
+                        <img src="/Icons_And_Avatars/justify_26.png" alt="img">
+                        <img src="/Icons_And_Avatars/checkbox_26.png" alt="img">
+                        <div>4/8</div>
+                        <img src="/Icons_And_Avatars/attach_26.png" alt="img">
+                        <div>2</div>
+                        <img src="/Icons_And_Avatars/comments_26.png" alt="img">
+                        <div>4</div>
+                    </div>
+                    <img class="faceImg" src="/Icons_And_Avatars/avatar_3.png" alt="img">
+                </div>
+            </div>
+            <div class="taskDiv">
+                <div>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi quibusdam eius quaerat
+                    reprehenderit, provident impedit.
+                </div>
+                <div class="buttonPanelDivOuter">
+                    <div class="buttonPanelDiv">
+                        <img src="/Icons_And_Avatars/justify_26.png" alt="img">
+                        <img src="/Icons_And_Avatars/checkbox_26.png" alt="img">
+                        <div>4/8</div>
+                        <img src="/Icons_And_Avatars/attach_26.png" alt="img">
+                        <div>2</div>
+                    </div>
+                    <img class="faceImg" src="/Icons_And_Avatars/avatar_4.png" alt="img">
+                </div>
+            </div>
+            <div class="taskDiv">
+                <div>
+                    Lorem, ipsum dolor.
+                </div>
+                <div class="buttonPanelDivOuter">
+                    <div class="buttonPanelDiv">
+                        <img src="/Icons_And_Avatars/justify_26.png" alt="img">
+                        <img src="/Icons_And_Avatars/attach_26.png" alt="img">
+                        <div>2</div>
+                        <img src="/Icons_And_Avatars/comments_26.png" alt="img">
+                        <div>4</div>
+                    </div>
+                    <img class="faceImg" src="/Icons_And_Avatars/avatar_3.png" alt="img">
+                </div>
+            </div>
+            <div class="taskDiv">
+                <div>
+                    Lorem ipsum dolor sit amet.
+                </div>
+                <div class="buttonPanelDivOuter">
+                    <div class="buttonPanelDiv">
+                        <img src="/Icons_And_Avatars/justify_26.png" alt="img">
+                        <img src="/Icons_And_Avatars/checkbox_26.png" alt="img">
+                        <div>4/8</div>
+                        <img src="/Icons_And_Avatars/attach_26.png" alt="img">
+                        <div>2</div>
+                        <img src="/Icons_And_Avatars/comments_26.png" alt="img">
+                        <div>4</div>
+                    </div>
+                    <img class="faceImg" src="/Icons_And_Avatars/avatar_3.png" alt="img">
+                </div>
+            </div>
+            <div class="taskDiv">
+                <div>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi quibusdam eius quaerat
+                    reprehenderit, provident impedit.
+                </div>
+                <div class="buttonPanelDivOuter">
+                    <div class="buttonPanelDiv">
+                        <img src="/Icons_And_Avatars/justify_26.png" alt="img">
+                        <img src="/Icons_And_Avatars/checkbox_26.png" alt="img">
+                        <div>4/8</div>
+                        <img src="/Icons_And_Avatars/attach_26.png" alt="img">
+                        <div>2</div>
+                    </div>
+                    <img class="faceImg" src="/Icons_And_Avatars/avatar_4.png" alt="img">
+                </div>
+            </div>
+            <div class="taskDiv">
+                <div>
+                    Lorem, ipsum dolor.
+                </div>
+                <div class="buttonPanelDivOuter">
+                    <div class="buttonPanelDiv">
+                        <img src="/Icons_And_Avatars/justify_26.png" alt="img">
+                        <img src="/Icons_And_Avatars/attach_26.png" alt="img">
+                        <div>2</div>
+                        <img src="/Icons_And_Avatars/comments_26.png" alt="img">
+                        <div>4</div>
+                    </div>
+                    <img class="faceImg" src="/Icons_And_Avatars/avatar_3.png" alt="img">
+                </div>
+            </div>
         </div>
 
         <div class="cardDiv">
             <h4>Test</h4>
+            <div class="taskDiv">
+                <div>
+                    Lorem ipsum dolor sit amet.
+                </div>
+                <div class="buttonPanelDivOuter">
+                    <div class="buttonPanelDiv">
+                        <img src="/Icons_And_Avatars/justify_26.png" alt="img">
+                        <img src="/Icons_And_Avatars/checkbox_26.png" alt="img">
+                        <div>4/8</div>
+                        <img src="/Icons_And_Avatars/attach_26.png" alt="img">
+                        <div>2</div>
+                        <img src="/Icons_And_Avatars/comments_26.png" alt="img">
+                        <div>4</div>
+                    </div>
+                    <img class="faceImg" src="/Icons_And_Avatars/avatar_3.png" alt="img">
+                </div>
+            </div>
+            <div class="taskDiv">
+                <div>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi quibusdam eius quaerat
+                    reprehenderit, provident impedit.
+                </div>
+                <div class="buttonPanelDivOuter">
+                    <div class="buttonPanelDiv">
+                        <img src="/Icons_And_Avatars/justify_26.png" alt="img">
+                        <img src="/Icons_And_Avatars/checkbox_26.png" alt="img">
+                        <div>4/8</div>
+                        <img src="/Icons_And_Avatars/attach_26.png" alt="img">
+                        <div>2</div>
+                    </div>
+                    <img class="faceImg" src="/Icons_And_Avatars/avatar_4.png" alt="img">
+                </div>
+            </div>
+            <div class="taskDiv">
+                <div>
+                    Lorem, ipsum dolor.
+                </div>
+                <div class="buttonPanelDivOuter">
+                    <div class="buttonPanelDiv">
+                        <img src="/Icons_And_Avatars/justify_26.png" alt="img">
+                        <img src="/Icons_And_Avatars/attach_26.png" alt="img">
+                        <div>2</div>
+                        <img src="/Icons_And_Avatars/comments_26.png" alt="img">
+                        <div>4</div>
+                    </div>
+                    <img class="faceImg" src="/Icons_And_Avatars/avatar_3.png" alt="img">
+                </div>
+            </div>
         </div>
 
         <div class="cardDiv">
             <h4>Fix</h4>
+            <div class="taskDiv">
+                <div>
+                    Lorem ipsum dolor sit amet.
+                </div>
+                <div class="buttonPanelDivOuter">
+                    <div class="buttonPanelDiv">
+                        <img src="/Icons_And_Avatars/justify_26.png" alt="img">
+                        <img src="/Icons_And_Avatars/checkbox_26.png" alt="img">
+                        <div>4/8</div>
+                        <img src="/Icons_And_Avatars/attach_26.png" alt="img">
+                        <div>2</div>
+                        <img src="/Icons_And_Avatars/comments_26.png" alt="img">
+                        <div>4</div>
+                    </div>
+                    <img class="faceImg" src="/Icons_And_Avatars/avatar_3.png" alt="img">
+                </div>
+            </div>
+            <div class="taskDiv">
+                <div>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi quibusdam eius quaerat
+                    reprehenderit, provident impedit.
+                </div>
+                <div class="buttonPanelDivOuter">
+                    <div class="buttonPanelDiv">
+                        <img src="/Icons_And_Avatars/justify_26.png" alt="img">
+                        <img src="/Icons_And_Avatars/checkbox_26.png" alt="img">
+                        <div>4/8</div>
+                        <img src="/Icons_And_Avatars/attach_26.png" alt="img">
+                        <div>2</div>
+                    </div>
+                    <img class="faceImg" src="/Icons_And_Avatars/avatar_4.png" alt="img">
+                </div>
+            </div>
+            <div class="taskDiv">
+                <div>
+                    Lorem, ipsum dolor.
+                </div>
+                <div class="buttonPanelDivOuter">
+                    <div class="buttonPanelDiv">
+                        <img src="/Icons_And_Avatars/justify_26.png" alt="img">
+                        <img src="/Icons_And_Avatars/attach_26.png" alt="img">
+                        <div>2</div>
+                        <img src="/Icons_And_Avatars/comments_26.png" alt="img">
+                        <div>4</div>
+                    </div>
+                    <img class="faceImg" src="/Icons_And_Avatars/avatar_3.png" alt="img">
+                </div>
+            </div>
         </div>
 
         <div class="cardDiv">
             <h4>Done</h4>
+            <div class="taskDiv">
+                <div>
+                    Lorem ipsum dolor sit amet.
+                </div>
+                <div class="buttonPanelDivOuter">
+                    <div class="buttonPanelDiv">
+                        <img src="/Icons_And_Avatars/justify_26.png" alt="img">
+                        <img src="/Icons_And_Avatars/checkbox_26.png" alt="img">
+                        <div>4/8</div>
+                        <img src="/Icons_And_Avatars/attach_26.png" alt="img">
+                        <div>2</div>
+                        <img src="/Icons_And_Avatars/comments_26.png" alt="img">
+                        <div>4</div>
+                    </div>
+                    <img class="faceImg" src="/Icons_And_Avatars/avatar_3.png" alt="img">
+                </div>
+            </div>
+            <div class="taskDiv">
+                <div>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi quibusdam eius quaerat
+                    reprehenderit, provident impedit.
+                </div>
+                <div class="buttonPanelDivOuter">
+                    <div class="buttonPanelDiv">
+                        <img src="/Icons_And_Avatars/justify_26.png" alt="img">
+                        <img src="/Icons_And_Avatars/checkbox_26.png" alt="img">
+                        <div>4/8</div>
+                        <img src="/Icons_And_Avatars/attach_26.png" alt="img">
+                        <div>2</div>
+                    </div>
+                    <img class="faceImg" src="/Icons_And_Avatars/avatar_4.png" alt="img">
+                </div>
+            </div>
+            <div class="taskDiv">
+                <div>
+                    Lorem, ipsum dolor.
+                </div>
+                <div class="buttonPanelDivOuter">
+                    <div class="buttonPanelDiv">
+                        <img src="/Icons_And_Avatars/justify_26.png" alt="img">
+                        <img src="/Icons_And_Avatars/attach_26.png" alt="img">
+                        <div>2</div>
+                        <img src="/Icons_And_Avatars/comments_26.png" alt="img">
+                        <div>4</div>
+                    </div>
+                    <img class="faceImg" src="/Icons_And_Avatars/avatar_3.png" alt="img">
+                </div>
+            </div>
         </div>
 
 
