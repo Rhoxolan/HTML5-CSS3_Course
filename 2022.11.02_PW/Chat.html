@@ -5,20 +5,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Chat</title>
 
     <style>
+        body{
+            background-color: rgb(253, 248, 240);
+        }
+
         #gridContainer {
-            border: 1px solid black;
+            /* border: 1px solid black; */
+            background-color: rgb(253, 253, 252);
             width: 700px;
             margin: auto;
             display: grid;
             grid: repeat(6, auto) / 175px 350px 175px;
+            row-gap: 5px;
         }
 
         .gridItem {
-            border: 1px solid red;
-            margin: 3px;
+            /* border: 1px solid red; */
+            margin: 1px;
         }
 
         .senderItem {
@@ -27,7 +33,13 @@
             align-items: flex-end;
         }
 
-        .senderItem>img {
+        .senderItemInner {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .senderItemInner>img {
             width: 48x;
             height: 48px;
         }
@@ -76,11 +88,13 @@
     <div id="gridContainer">
 
         <div class="gridItem senderItem">
-            <p>
-                <span class="nameSp">Anie Smith</span><br>
-                <span class="timeSp">4 hours Ago</span>
-            </p>
-            <img src="/Avatars/avatar_2.png" alt="avatar2">
+            <div class="senderItemInner">
+                <p>
+                    <span class="nameSp">Anie Smith</span><br>
+                    <span class="timeSp">4 hours Ago</span>
+                </p>
+                <img src="/Avatars/avatar_2.png" alt="avatar2">
+            </div>
         </div>
 
         <div class="gridItem messageItem">
@@ -104,67 +118,51 @@
         </div>
 
         <div class="gridItem senderItem" style="grid-column-start: 3; grid-row-start: 2;">
+            <div class="senderItemInner">
+                <img src="/Avatars/avatar_1.png" alt="avatar_1">
+                <p>
+                    <span class="nameSp">Jack Silverston</span><br>
+                    <span class="timeSp">4 hours Ago</span>
+                </p>
+            </div>
+        </div>
+
+        <div class="gridItem senderItem" style="grid-column-start: 1; grid-row-start: 3;">
+            <div class="senderItemInner">
+                <p>
+                    <span class="nameSp">Anie Smith</span><br>
+                    <span class="timeSp">4 hours Ago</span>
+                </p>
+                <img src="/Avatars/avatar_2.png" alt="avatar2">
+            </div>
+        </div>
+
+        <div class="gridItem messageItem" style="grid-column-start: 2; grid-row-start: 3;">
+            <div class="sender leftSender ">
+                <p class="message">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id quidem consequatur doloribus corporis
+                    rem pariatur!
+                </p>
+            </div>
+        </div>
+
+        <div class="gridItem senderItem" style="grid-column-start: 3; grid-row-start: 4;">
+            <div class="senderItemInner">
             <img src="/Avatars/avatar_1.png" alt="avatar_1">
             <p>
                 <span class="nameSp">Jack Silverston</span><br>
-                <span class="timeSp">4 hours Ago</span>
+                <span class="timeSp">3 hours Ago</span>
             </p>
         </div>
 
-        <div class="gridItem">
-
         </div>
 
-        <div class="gridItem">
-
-        </div>
-
-        <div class="gridItem">
-
-        </div>
-
-        <div class="gridItem">
-
-        </div>
-
-        <div class="gridItem">
-
-        </div>
-
-        <div class="gridItem">
-
-        </div>
-
-        <div class="gridItem">
-
-        </div>
-
-        <div class="gridItem">
-
-        </div>
-
-        <div class="gridItem">
-
-        </div>
-
-        <div class="gridItem">
-
-        </div>
-
-        <div class="gridItem">
-
-        </div>
-
-        <div class="gridItem">
-
-        </div>
-
-        <div class="gridItem">
-
-        </div>
-
-        <div class="gridItem">
-
+        <div class="gridItem messageItem" style="grid-column-start: 2; grid-row-start: 4;">
+            <div class="sender rightSender">
+                <p class="message">
+                    Lorem!
+                </p>
+            </div>
         </div>
 
     </div>

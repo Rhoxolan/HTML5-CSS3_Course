@@ -27,3 +27,6 @@ PW2 - "Choose Your Plan". Пример увеличивающихся карто
 
 31.10.2022 - Flexbox.
 PW - "News". Работа с Flexbox.
+
+02.11.2022 - Grid Layout.
+PW1 - "Chat". Работа с Grid Layout. Пример позицинирования элементов без именованных grid-линий.
