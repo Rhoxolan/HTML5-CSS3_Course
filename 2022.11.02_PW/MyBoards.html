@@ -55,13 +55,26 @@
             margin-bottom: 10px;
         }
 
+        .buttonPanelDivOuter{
+            display: flex;
+            justify-content: space-between;
+        }
+
         .buttonPanelDiv {
             margin-top: 15px;
             display: inline-flex;
+            align-items: flex-end;
+            gap: 7px;
         }
 
-        .buttonPanelDiv>img{
+        .buttonPanelDiv>img {
             width: 16px;
+            height: 16px;
+        }
+
+        .faceImg{
+            width: 48px;
+            height: 48px;
         }
     </style>
 
@@ -81,8 +94,17 @@
                 <div>
                     Lorem ipsum dolor sit amet.
                 </div>
-                <div class="buttonPanelDiv">
-                    <img src="/Icons_And_Avatars/justify_26.png" alt="img">
+                <div class="buttonPanelDivOuter">
+                    <div class="buttonPanelDiv">
+                        <img src="/Icons_And_Avatars/justify_26.png" alt="img">
+                        <img src="/Icons_And_Avatars/checkbox_26.png" alt="img">
+                        <div>4/8</div>
+                        <img src="/Icons_And_Avatars/attach_26.png" alt="img">
+                        <div>2</div>
+                        <img src="/Icons_And_Avatars/comments_26.png" alt="img">
+                        <div>4</div>
+                    </div>
+                    <img class="faceImg" src="/Icons_And_Avatars/avatar_3.png" alt="img">
                 </div>
             </div>
             <div class="taskDiv">
