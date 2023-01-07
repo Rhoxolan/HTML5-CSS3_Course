@@ -31,3 +31,6 @@ PW - "News". Работа с Flexbox.
 02.11.2022 - Grid Layout.
 PW1 - "Chat". Работа с Grid Layout. Пример позицинирования элементов без именованных grid-линий.
 PW2 - "My Boards". Работа с Flexbox.
+
+07.11.2022 - Форми.
+PW1 - "LoginPassword". Работа с формами. Работа с полями ввода (input типы "text" и "password") и кнопками (тип "submit").
