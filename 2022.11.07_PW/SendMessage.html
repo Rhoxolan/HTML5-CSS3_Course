@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send Message</title>
+
+    <style>
+        body {
+            background-image: url(/backround.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .bodyDiv{
+            height: 95vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .formDiv {
+            /* border: 1px solid red; */
+            padding: 25px;
+            padding-left: 30px;
+            padding-right: 30px;
+            width: 800px;
+            height: 600px;
+            margin: auto;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+
+        .labelClass{
+            color: whitesmoke;
+        }
+
+        .gridContainer{
+            display: grid;
+            grid-template-columns: [col1start] 1fr [col1end] 10px
+                                    [col2start] 1fr [col2end] 10px
+                                    [col3start] 0.6fr [col3end] 10px
+                                    [col4start] 0.2fr [col4end] 10px
+                                    [col5start] 1.1fr [col5end];
+                                    /* Проверить как размечено. */
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="bodyDiv">
+        <form>
+            <div class="formDiv">
+                <h1 class="labelClass">Contact form</h1>
+                <p class="labelClass">Please fill in your information and we'll be sending your order</p>
+                <div class="gridContainer">
+
+                </div>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
