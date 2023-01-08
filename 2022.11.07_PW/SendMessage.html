@@ -37,15 +37,46 @@
             color: whitesmoke;
         }
 
+        #formHr{
+            background-color: whitesmoke;
+            border: none;
+            height: 1px;
+        }
+
+        #sendMessageButtonDiv{
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        #sendMessageButton{
+            border: 1px solid white;
+            width: 250px;
+            height: 35px;
+            background-color: transparent;
+            color: whitesmoke;
+            font-weight: bolder;
+        }
+
+        #sendMessageButton:hover{
+            background-color: rgba(188, 192, 188, 0.349);
+        }
+
         .gridContainer{
             display: grid;
-            grid-template-columns: [col1start] 1fr [col1end] 10px
+            grid-template-columns: [col1start] 0.9fr [col1end] 10px
                                     [col2start] 1fr [col2end] 10px
                                     [col3start] 0.6fr [col3end] 10px
                                     [col4start] 0.2fr [col4end] 10px
-                                    [col5start] 1.1fr [col5end];
-                                    /* Проверить как размечено. */
+                                    [col5start] 1.3fr [col5end];
+            grid-template-rows: [row1start] 1fr [row1end] 10px
+                                [row2start] 1fr [row2end] 10px
+                                [row3start] 1fr [row3end] 10px
+                                [row4start] 1fr [row4end] 10px
+                                [row5start] 1fr [row5end];
         }
+
+
+
 
     </style>
 
@@ -60,7 +91,13 @@
                 <p class="labelClass">Please fill in your information and we'll be sending your order</p>
                 <div class="gridContainer">
 
+                   
+
                 </div>
+                <hr id="formHr">
+                <div id="sendMessageButtonDiv">
+                    <button id="sendMessageButton" type="submit">Send Message</button>
+                </div> 
             </div>
         </form>
     </div>
