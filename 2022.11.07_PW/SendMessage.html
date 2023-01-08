@@ -67,7 +67,7 @@
                                     [col2start] 1fr [col2end] 10px
                                     [col3start] 0.6fr [col3end] 10px
                                     [col4start] 0.2fr [col4end] 10px
-                                    [col5start] 1.3fr [col5end];
+                                    [col5start] 1.2fr [col5end];
             grid-template-rows: [row1start] 1fr [row1end] 10px
                                 [row2start] 1fr [row2end] 10px
                                 [row3start] 1fr [row3end] 10px
@@ -75,7 +75,45 @@
                                 [row5start] 1fr [row5end];
         }
 
+        .inputClass{
+            border: 0;
+            padding: 5px;
+        }
 
+        #label1{
+            grid-column: col1start / col1end;
+            grid-row: row1start;
+        }
+
+        #input1{
+            grid-column: col2start / col3end;
+            grid-row: row1start;
+        }
+
+        #input2{
+            grid-column: col4start / col5end;
+            grid-row: row1start;
+        }
+
+        #label2{
+            grid-column: col1start / col1end;
+            grid-row: row2start;
+        }
+
+        #input3{
+            grid-column: col2start / col5end;
+            grid-row: row2start;
+        }
+
+        #label3{
+            grid-column: col1start / col1end;
+            grid-row: row3start;
+        }
+
+        #input4{
+            grid-column: col2start / col2end;
+            grid-row: row3start;
+        }
 
 
     </style>
@@ -90,8 +128,14 @@
                 <h1 class="labelClass">Contact form</h1>
                 <p class="labelClass">Please fill in your information and we'll be sending your order</p>
                 <div class="gridContainer">
+                    <label id="label1" class="labelClass" for="input1">Your Name</label>
+                    <input id="input1" class="inputClass" type="text" name="nameInput" placeholder="first name" pattern="[A-Za-z]{1,50}" required>
+                    <input id="input2" class="inputClass" type="text" name="surnameInput" placeholder="surname" pattern="[A-Za-z]{1,50}" required>
+                    <label id="label2" class="labelClass" for="input3">Your E-Mail</label>
+                    <input id="input3" class="inputClass" type="email" name="emailInput" placeholder="your_mail@example.com" required>
+                    <label id="label3" class="labelClass" for="input4">Phone *</label>
+                    <input id="input4" class="inputClass" type="text" name="numberInput1" placeholder="38" pattern="[0-9]{2}" required>
 
-                   
 
                 </div>
                 <hr id="formHr">
