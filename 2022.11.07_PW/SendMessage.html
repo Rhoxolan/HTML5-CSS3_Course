@@ -6,118 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Send Message</title>
-
-    <style>
-        body {
-            background-image: url(/backround.jpg);
-            background-size: cover;
-            background-attachment: fixed;
-        }
-
-        .bodyDiv{
-            height: 95vh;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .formDiv {
-            /* border: 1px solid red; */
-            padding: 25px;
-            padding-left: 30px;
-            padding-right: 30px;
-            width: 800px;
-            height: 600px;
-            margin: auto;
-            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-        }
-
-        .labelClass{
-            color: whitesmoke;
-        }
-
-        #formHr{
-            background-color: whitesmoke;
-            border: none;
-            height: 1px;
-        }
-
-        #sendMessageButtonDiv{
-            display: flex;
-            justify-content: flex-end;
-        }
-
-        #sendMessageButton{
-            border: 1px solid white;
-            width: 250px;
-            height: 35px;
-            background-color: transparent;
-            color: whitesmoke;
-            font-weight: bolder;
-        }
-
-        #sendMessageButton:hover{
-            background-color: rgba(188, 192, 188, 0.349);
-        }
-
-        .gridContainer{
-            display: grid;
-            grid-template-columns: [col1start] 0.9fr [col1end] 10px
-                                    [col2start] 1fr [col2end] 10px
-                                    [col3start] 0.6fr [col3end] 10px
-                                    [col4start] 0.2fr [col4end] 10px
-                                    [col5start] 1.2fr [col5end];
-            grid-template-rows: [row1start] 1fr [row1end] 10px
-                                [row2start] 1fr [row2end] 10px
-                                [row3start] 1fr [row3end] 10px
-                                [row4start] 1fr [row4end] 10px
-                                [row5start] 1fr [row5end];
-        }
-
-        .inputClass{
-            border: 0;
-            padding: 5px;
-        }
-
-        #label1{
-            grid-column: col1start / col1end;
-            grid-row: row1start;
-        }
-
-        #input1{
-            grid-column: col2start / col3end;
-            grid-row: row1start;
-        }
-
-        #input2{
-            grid-column: col4start / col5end;
-            grid-row: row1start;
-        }
-
-        #label2{
-            grid-column: col1start / col1end;
-            grid-row: row2start;
-        }
-
-        #input3{
-            grid-column: col2start / col5end;
-            grid-row: row2start;
-        }
-
-        #label3{
-            grid-column: col1start / col1end;
-            grid-row: row3start;
-        }
-
-        #input4{
-            grid-column: col2start / col2end;
-            grid-row: row3start;
-        }
-
-
-    </style>
-
+    <link rel="stylesheet" href="/SendMessage_styles.css">
 </head>
 
 <body>
@@ -128,14 +17,24 @@
                 <h1 class="labelClass">Contact form</h1>
                 <p class="labelClass">Please fill in your information and we'll be sending your order</p>
                 <div class="gridContainer">
-                    <label id="label1" class="labelClass" for="input1">Your Name</label>
+                    <label id="label1" class="labelClass inputLabelClass" for="input1">Your Name</label>
                     <input id="input1" class="inputClass" type="text" name="nameInput" placeholder="first name" pattern="[A-Za-z]{1,50}" required>
                     <input id="input2" class="inputClass" type="text" name="surnameInput" placeholder="surname" pattern="[A-Za-z]{1,50}" required>
-                    <label id="label2" class="labelClass" for="input3">Your E-Mail</label>
+                    <label id="label2" class="labelClass inputLabelClass" for="input3">Your E-Mail</label>
                     <input id="input3" class="inputClass" type="email" name="emailInput" placeholder="your_mail@example.com" required>
-                    <label id="label3" class="labelClass" for="input4">Phone *</label>
+                    <label id="label3" class="labelClass inputLabelClass" for="input4">Phone *</label>
                     <input id="input4" class="inputClass" type="text" name="numberInput1" placeholder="38" pattern="[0-9]{2}" required>
-
+                    <input id="input5" class="inputClass" type="text" name="numberInput2" placeholder="050" pattern="[0-9]{3}" required>
+                    <input id="input6" class="inputClass" type="text" name="numberInput3" placeholder="1234567" pattern="[0-9]{6}" required>
+                    <label id="label4" class="labelClass inputLabelClass" for="input7">Message subject *</label>
+                    <input id="input7" class="inputClass" type="text" name="subjectInput" list="themeDatalist" pattern="[A-Za-z0-9]{1,50}" required>
+                    <datalist id="themeDatalist">
+                        <option>Work</option>
+                        <option>Recall</option>
+                        <option>Other</option>
+                    </datalist>
+                    <label id="label5" class="labelClass inputLabelClass" for="input8">Message *</label>
+                    <textarea id="input8" name="input8" class="inputClass" rows="8"></textarea>
 
                 </div>
                 <hr id="formHr">
